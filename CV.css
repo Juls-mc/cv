@@ -5,11 +5,8 @@ body
     flex-direction: column;
     font-family: "andale mono";
     font-size: 0.9em;
-    max-width: 1224px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0px;
+    width: 900px;
+    margin: 0 auto;
 
 }
 
@@ -70,7 +67,7 @@ body
 
 .about
 {
-    padding-bottom: 180px;
+    padding-bottom: 160px;
 }
 
 a
