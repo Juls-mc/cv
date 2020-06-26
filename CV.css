@@ -7,6 +7,7 @@ body
     font-size: 0.9em;
     width: 900px;
     margin: 0 auto;
+    border: solid 0.6px #26C6DA;
 
 }
 
@@ -87,7 +88,7 @@ a:hover
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-    margin-bottom:30px;
+    margin-bottom:28px;
      background-color: #26C6DA;
 }
 
@@ -97,6 +98,7 @@ a:hover
   border-radius: 100%;
   color: black;
      background-color: #26C6DA;
+
 }
 
 i[class*="wine"]
@@ -139,7 +141,7 @@ i[class*="globe"],i[class*="music"]
 
 .formation
 {
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 #souligne
@@ -166,7 +168,7 @@ h2
 .ligne
 {
 	display: flex;
-    width: 100%;
+    width: 90%;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	margin-bottom: 20px;
@@ -203,7 +205,8 @@ i[class*="dot"], i[class*="circle"]
 
 .ecole1, .ecole2, .job1, .job2, .job3
 {
-    margin-left: 90px;
+    margin-left: 80px;
+    margin-right: 30px;
         margin-bottom: 20px
 }
 
@@ -228,7 +231,6 @@ li
     flex-direction: row;
     justify-content: space-between;
     padding-right: 100px;
-	margin-bottom: 20px;
     margin-left: 20px;
 }
 
