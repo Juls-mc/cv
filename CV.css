@@ -5,11 +5,12 @@ body
     flex-direction: column;
     font-family: "andale mono";
     font-size: 0.9em;
-    max-width: 1290px;
+    max-width: 1224px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0px;
+
 }
 
 /*left side*/
@@ -49,6 +50,7 @@ body
 {
     background-color: #26C6DA;
 }
+
 .left p
 {
     margin-left: 30px;
@@ -64,6 +66,11 @@ body
 	color: #26C6DA;
 	text-align: center;
     margin-bottom: 40px;
+}
+
+.about
+{
+    padding-bottom: 180px;
 }
 
 a
@@ -112,10 +119,10 @@ i[class*="globe"],i[class*="music"]
 {
     display: flex;
     flex-direction: column;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-top: -200px;
     width: 50%;
-    min-width: 700px;
+    min-width: 600px;
     background-color: white;
 }
 
@@ -126,7 +133,7 @@ i[class*="globe"],i[class*="music"]
     justify-content: center;
     margin-left: 20px;
     width: 50%;
-    min-width: 700px;
+    min-width: 600px;
 }
 .prenom
 {
@@ -213,6 +220,7 @@ li
 {    display: flex;
     list-style-type: none;
     font-size: 0.8em;
+    min-width: px;
 }
 
 /* SECTION recommandations */
@@ -226,4 +234,8 @@ li
 	margin-bottom: 20px;
     margin-left: 20px;
 }
+
+
+
+/* MEDIA QUERIES */
 
