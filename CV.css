@@ -344,10 +344,10 @@ li
 
 /****** MEDIA QUERY tablet size ******/
 
-@media screen and (min-width: 769px) and (max-width:991px)
+@media screen and (min-width: 769px) and (max-width:1025px)
 {
     body
-    {max-width: 991px;
+    {max-width: 1025px;
         border: none;
         font-size: 1em;
 
