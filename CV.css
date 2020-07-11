@@ -236,7 +236,7 @@ li
 }
 
 
-/* MEDIA QUERIES small screen */
+/******* MEDIA QUERIES small screen *******/
 
 @media screen and (max-width: 768px)
 {	body
@@ -342,7 +342,7 @@ li
 }
 
 
-/****** MEDIA QUERY tablet devices size ******/
+/****** MEDIA QUERY tablet size ******/
 
 @media screen and (min-width: 769px) and (max-width:991px)
 {
@@ -402,13 +402,13 @@ li
 	}
    .right
     {
-        margin-left: 80px;
+        margin-left: 40px;
         margin-top: -50px;
     }
 
   .formation, .experience, .recommandations
     {
-    width: auto;
+    width: 650px;
     margin: 10px;
     padding: 10px;
     box-shadow: 0px 0px 8px #90A4AE;
@@ -432,7 +432,7 @@ li
     }
     .contact
     {
-       margin-top: 1550px
+       margin-top: 1450px
     }
 
      .about
