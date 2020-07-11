@@ -243,6 +243,8 @@ li
 	{
 		max-width: 768px;
         border: none;
+        font-size: 1em;
+
 
 	}
 
@@ -279,10 +281,8 @@ li
 		width: 100%;
 		background-color: #26C6DA;
         margin-top: -50px;
-        padding-bottom: 24px;
+        padding-bottom: 16px;
         margin-left: 0px;
-        padding-right: 200px;
-
 	}
 
     .prenom
@@ -317,12 +317,18 @@ li
     }
     .contact
     {
-       margin-top: 1460px
+       margin-top: 1650px
     }
 
      .about
     {
        margin-bottom: -120px
+    }
+
+    .noms
+    {
+        padding-right: 20px;
+
     }
 
 }
