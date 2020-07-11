@@ -232,11 +232,11 @@ li
     justify-content: space-between;
     padding-right: 100px;
     margin-left: 20px;
+
 }
 
 
-
-/* MEDIA QUERIES */
+/* MEDIA QUERIES small screen */
 
 @media screen and (max-width: 768px)
 {	body
@@ -307,7 +307,17 @@ li
     padding: 10px;
     box-shadow: 0px 0px 8px #90A4AE;
     border-radius: 5px;
+}
+     ul
+    {
+        padding-left: 10px;
+    }
 
+    .ecole1, .ecole2, .job1, .job2, .job3
+{
+    margin-left: 30px;
+    margin-right: 30px;
+        margin-bottom: 20px
 }
     .contact, .about, .loisirs
 
@@ -317,7 +327,7 @@ li
     }
     .contact
     {
-       margin-top: 1650px
+       margin-top: 1550px
     }
 
      .about
@@ -328,7 +338,110 @@ li
     .noms
     {
         padding-right: 20px;
+    }
+}
+
+
+/****** MEDIA QUERY tablet devices size ******/
+
+@media screen and (min-width: 769px) and (max-width:991px)
+{
+    body
+    {max-width: 991px;
+        border: none;
+        font-size: 1em;
+
+
+	}
+
+	.contour_photo, .photo
+	{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.contour_photo
+	{
+		width: auto;
+		min-width: auto;
+	}
+
+.left
+    {
+        height:300px;
+            width: 768px;
 
     }
 
+	.photo
+	{
+		max-width:150px;
+
+	}
+
+  .nom
+	{
+		display: flex;
+        justify-content: center;
+		width: 100%;
+		background-color: #26C6DA;
+        margin-top: -50px;
+        padding-bottom: 16px;
+        margin-left: 0px;
+	}
+
+    .prenom
+	{
+		color: white;
+	}
+
+	#souligne
+	{
+		border-bottom: 2px solid white;
+	}
+   .right
+    {
+        margin-left: 80px;
+        margin-top: -50px;
+    }
+
+  .formation, .experience, .recommandations
+    {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px #90A4AE;
+    border-radius: 5px;
+}
+    ul
+    {
+        padding-left: 10px;
+    }
+    .ecole1, .ecole2, .job1, .job2, .job3
+{
+    margin-left: 30px;
+    margin-right: 30px;
+        margin-bottom: 20px
+}
+    .contact, .about, .loisirs
+
+        {
+		display: flex;
+		flex-direction: column;
+    }
+    .contact
+    {
+       margin-top: 1550px
+    }
+
+     .about
+    {
+       margin-bottom: -120px
+    }
+
+    .noms
+    {
+        padding-right: 20px;
+    }
 }
