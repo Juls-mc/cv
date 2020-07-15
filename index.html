@@ -2,27 +2,33 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="CV.css" />
+        <link rel="stylesheet" href="cv.css" />
         <script src="https://kit.fontawesome.com/9f47002621.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
         <title>Juliette Mc Cavana</title>
     </head>
 
     <body>
-
-       <div class="left">
+  <div class="container">
+	<header>
 
        <!--Photo du CV en haut à gauche-->
        <div class="contour_photo">
            <img class="photo" src="cv_mini.jpg" alt="photo de Juliette">
        </div>
 
+              <!--Nom-->
+       <section class="nom">
+        <h1><span class="prenom">Juliette</span> Mc Cavana</h1>
+        <h2><span id="souligne">Dével</span>oppeuse web freelance</h2>
+          </section> <br/>
 
+	</header>
 
-
-      <!--Contact, à propos de moi-->
-
-               <div class="contact">
+      <!--ASIDE : Contact, à propos de moi-->
+<aside>
+               <section class="contact">
               <h2>CONTACT</h2>
               <p>Adresse<br/>
                  Paris, France</p>
@@ -33,35 +39,31 @@
              <p>LinkedIn<br/>
              <a href="https://www.linkedin.com/in/juliette-mccavana-3a3b06152/"> Juliette McCavana </a> </p>
 
-            </div>
+            </section>
 
-            <div class="about">
+            <section class="about">
                 <h2>À PROPOS DE MOI</h2>
                 <p>Après près de 10 ans passés à travailler dans le domaine du vin et de la restauration, je suis en pleine reconversion dans le monde du développement web et digital marketing.</p>
                 <p>Passionnée de vin, gastronomie, musique, voyages, langues, aujourd'hui je découvre une forte curiosité pour le développement web d'où mon inscription à une formation auprès de Open Classrooms.</p>
                 <p>À la fin de cette formation je souhaite intégrer une start-up afin d'aquérir l'expérience nécessaire avant de me mettre à mon compte.
                 </p>
-          </div>
+          </section>
 
-           <div class="loisirs">
+           <section class="loisirs">
         <h2>LOISIRS</h2>
-        <div id="logos">
+        <section id="logos">
             <i class="fas fa-wine-glass-alt"></i>
             <i class="fas fa-globe-americas"></i>
             <i class="fas fa-music"></i>
 
-        </div>
-         </div>
+        </section>
+         </section>
+ </aside>
 
-        </div>
+        <!--MAIN-->
+<main>
     <!--Formation-->
-      <div class="right">
 
-                 <!--Nom-->
-       <section class="nom">
-        <h1><span class="prenom">Juliette</span> Mc Cavana</h1>
-        <h2><span id="souligne">Dével</span>oppeuse web freelance</h2>
-          </section> <br/>
 
 
  	<section class="formation">
@@ -141,6 +143,7 @@
              Email:amaille@gmail.com</p></div>
              </div>
          </section>
-   </div>
-    </body>
+   	</main>
+	</div>
+  </body>
 </html>
