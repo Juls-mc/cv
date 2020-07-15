@@ -1,24 +1,47 @@
-
 body
 {
-    display: flex;
-    flex-direction: column;
-    font-family: "andale mono";
+    font-family: 'Quicksand', sans-serif;
     font-size: 0.9em;
+}
+
+.container
+{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 900px;
     margin: 0 auto;
     border: solid 0.6px #26C6DA;
+}
 
+header
+{
+    display: flex;
+    width: 100%;
+    order: 1;
+}
+
+.nom
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding-left: 3%;
+}
+.prenom
+{
+    color: #26C6DA;
 }
 
 /*left side*/
-
-.left
+aside
 {
     display: flex;
      flex-direction: column;
     justify-content: flex-start;
-    height: 300px;
+    order: 2;
     background-color: #26C6DA;
     width: 30%;
     min-width: 250px;
@@ -30,17 +53,13 @@ body
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: O;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    min-width: 250px;
+    min-width: 270px;
     background-color: #26C6DA;
 }
 .photo
 {
     max-width: 200px;
-    margin: 0;
+    margin: 10px;
     border:solid 2px #006064;
     border-radius: 50%;
 }
@@ -50,14 +69,14 @@ body
     background-color: #26C6DA;
 }
 
-.left p
+aside p
 {
     margin-left: 30px;
     margin-right: 30px;
      background-color: #26C6DA;
 }
 
-.left h2
+aside h2
 {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -115,30 +134,15 @@ i[class*="globe"],i[class*="music"]
 
 /* RIGHT SIDE*/
 
-.right
+main
 {
     display: flex;
     flex-direction: column;
-    margin-left: 300px;
-    margin-top: -200px;
-    width: 50%;
-    min-width: 600px;
-    background-color: white;
+    justify-content: flex-end;
+    order:2;
+    width: 70%;
 }
 
-.nom
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
-    width: 50%;
-    min-width: 600px;
-}
-.prenom
-{
-    color: #26C6DA;
-}
 
 .formation
 {
@@ -159,7 +163,6 @@ h1
 h2
 {
     margin-bottom: 0;
-
     font-size: 1.25em;
 }
 
@@ -242,17 +245,25 @@ li
 {	body
 	{
 		max-width: 768px;
+        font-size: 0.8em;
+        margin: 0px;
+    }
+
+    .container
+    {
+        width: auto;
         border: none;
-        font-size: 1em;
+     }
 
-
-	}
+header{
+         display: flex;
+         flex-direction: column;
+    order: 1;
+     }
 
 	.contour_photo, .photo
 	{
-		display: flex;
-		flex-direction: column;
-		height: auto;
+		width: auto;
 	}
 
 	.contour_photo
@@ -260,50 +271,63 @@ li
 		width: auto;
 		min-width: auto;
 	}
-
-.left
+    .photo
     {
-        height:300px;
-            width: 768px;
+        max-width:150px;
 
     }
-
-	.photo
-	{
-		max-width:150px;
-
-	}
-
-  .nom
-	{
-		display: flex;
+h1
+{
+    font-size: 1.5em;
+    display: flex;
         justify-content: center;
-		width: 100%;
-		background-color: #26C6DA;
-        margin-top: -50px;
-        padding-bottom: 16px;
-        margin-left: 0px;
-	}
+}
+header h2
+{
+    font-size: 1.1em;
+     display: flex;
+        justify-content: center;
+}
+  .nom
+    {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        background-color: white;
+        margin-top: 10px;
+    }
 
     .prenom
-	{
-		color: white;
-	}
-
-	#souligne
-	{
-		border-bottom: 2px solid white;
-	}
-   .right
     {
-        margin-left: 80px;
-        margin-top: -50px;
+        color: #26C6DA;
+        margin-right: 20px;
     }
+
+#souligne
+    {
+        border-bottom: 2px solid #26C6DA;
+    }
+
+aside
+    {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        order:3
+    }
+
+
+main
+{
+        width: auto;
+    order:2
+}
 
   .formation, .experience, .recommandations
     {
     width: auto;
-        margin: 10px;
+    margin: 10px;
     padding: 10px;
     box-shadow: 0px 0px 8px #90A4AE;
     border-radius: 5px;
@@ -317,131 +341,149 @@ li
 {
     margin-left: 30px;
     margin-right: 30px;
-        margin-bottom: 20px
+    margin-bottom: 20px
 }
-    .contact, .about, .loisirs
 
-        {
-		display: flex;
-		flex-direction: column;
-    }
-    .contact
-    {
-       margin-top: 1550px
-    }
-
-     .about
+.about
     {
        margin-bottom: -120px
     }
 
-    .noms
+.noms
     {
-        padding-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
     }
+
+
 }
 
 
 /****** MEDIA QUERY tablet size ******/
 
-@media screen and (min-width: 769px) and (max-width:1025px)
+@media screen and (min-width: 768px) and (max-width:1025px)
 {
-    body
-    {max-width: 1025px;
-        border: none;
-        font-size: 1em;
-
-
-	}
-
-	.contour_photo, .photo
-	{
-		display: flex;
-		flex-direction: column;
-		height: auto;
-	}
-
-	.contour_photo
-	{
-		width: auto;
-		min-width: auto;
-	}
-
-.left
+body
     {
-        height:300px;
-            width: 1025px;
-
+        max-width: 1025px;
+        font-size: 0.9em;
+        margin: 0px;
     }
 
-	.photo
-	{
-		max-width:150px;
+    .container
+    {
+        width: auto;
+        border: none;
+        display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+     }
 
-	}
+header{
+         display: flex;
+         flex-direction: column;
+    order: 1
+     }
 
-  .nom
-	{
-		display: flex;
+    .contour_photo, .photo
+    {
+        width: auto;
+    }
+
+    .contour_photo
+    {
+        width: auto;
+        min-width: auto;
+    }
+    .photo
+    {
+        max-width:180px;
+
+    }
+h1
+{
+    font-size: 1.5em;
+    display: flex;
         justify-content: center;
-		width: 100%;
-		background-color: #26C6DA;
-        margin-top: -50px;
-        padding-bottom: 15px;
-        margin-left: 0px;
-	}
+}
+header h2
+{
+    font-size: 1.1em;
+     display: flex;
+        justify-content: center;
+}
+  .nom
+    {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        background-color: white;
+        margin-top: 10px;
+    }
 
     .prenom
-	{
-		color: white;
-	}
-
-	#souligne
-	{
-		border-bottom: 2px solid white;
-	}
-   .right
     {
-        margin-left: 150px;
-        margin-top: -50px;
+        color: #26C6DA;
     }
 
+#souligne
+    {
+        border-bottom: 2px solid #26C6DA;
+    }
+
+aside
+    {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        order:3
+    }
+
+
+main
+{
+        width: auto;
+        margin-top: 0%;
+        margin-left: 1px;
+    order: 2;
+}
   .formation, .experience, .recommandations
     {
-    width: 650px;
+    width: auto;
     margin: 10px;
     padding: 10px;
     box-shadow: 0px 0px 8px #90A4AE;
     border-radius: 5px;
 }
-    ul
+     ul
     {
         padding-left: 10px;
     }
+
     .ecole1, .ecole2, .job1, .job2, .job3
 {
     margin-left: 30px;
     margin-right: 30px;
-        margin-bottom: 20px
+    margin-bottom: 20px
 }
-    .contact, .about, .loisirs
 
-        {
-		display: flex;
-		flex-direction: column;
-    }
-    .contact
-    {
-       margin-top: 1450px
-    }
-
-     .about
+.about
     {
        margin-bottom: -120px
     }
 
-    .noms
+.noms
     {
-        padding-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 10px;
     }
+
 }
