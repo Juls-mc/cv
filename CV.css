@@ -189,12 +189,19 @@ i[class*="pencil"], i[class*="briefcase"], i[class*="graduation"]
 	color: #009688;
 }
 
-.nom_ecole, .nom_job
+.date p
 {
   display: flex;
-    justify-content: flex-start
+    flex-direction: row;
+    width: 100px;
+    margin-bottom:0
 }
 
+.dot
+{
+    display: flex;
+    padding-top: 15px;
+}
 .ecoles, .jobs
 {
     display: flex;
@@ -211,7 +218,8 @@ i[class*="dot"], i[class*="circle"]
 
 .ecole1, .ecole2, .job1, .job2, .job3
 {
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
     margin-right: 30px;
         margin-bottom: 20px;
 }
@@ -220,13 +228,20 @@ i[class*="dot"], i[class*="circle"]
 {
     font-weight: bolder;
     font-size: 1.1em;
-    margin-top: 0;
+}
+
+.p2
+{
+    margin: 0;
 }
 
 li
 {    display: flex;
+    flex-direction: wrap;
     list-style-type: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
 }
 
 /* SECTION recommandations */
