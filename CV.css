@@ -237,7 +237,6 @@ i[class*="dot"], i[class*="circle"]
 
 li
 {    display: flex;
-    flex-direction: wrap;
     list-style-type: none;
     font-size: 0.9em;
     margin: 0;
